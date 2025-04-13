@@ -1,16 +1,49 @@
 
 @import "tailwindcss";
-@theme {
-    --font-sans : Inter, sans-serif;
-    --font-serif : Playfair Display, serif;
-    --font-logo : Dancing Script, cursive;
+@plugin "tailwindcss-animate";
 
-    --color-primary: #D946EF;
-    --color-secondary: #FEF7CD;
-    --color- destructive: 
-
+  @theme {
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-ring: hsl(var(--ring));
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
   
-}
+    --color-primary: #D946EF;
+    --color-primary-foreground: #FFFFFF;
+  
+    --color-secondary: #FEF7CD;
+    --color-secondary-foreground: #1A1A1A;
+  
+    --color-destructive: hsl(var(--destructive));
+    --color-destructive-foreground: hsl(var(--destructive-foreground));
+  
+    --color-muted: hsl(var(--muted));
+    --color-muted-foreground: hsl(var(--muted-foreground));
+  
+    --color-accent: #FEC6A1;
+    --color-accent-foreground: #1A1A1A;
+  
+    --color-popover: hsl(var(--popover));
+    --color-popover-foreground: hsl(var(--popover-foreground));
+  
+    --color-card: hsl(var(--card));
+    --color-card-foreground: hsl(var(--card-foreground));
+  
+    --color-fashion: #D946EF;
+    --color-lifestyle: #0EA5E9;
+    --color-entertainment: #F97316;
+    --color-health: #8B5CF6;
+    --color-career: #10B981;
+  
+    --font-sans: "Inter", sans-serif;
+    --font-serif: "Playfair Display", serif;
+    --font-logo: "Dancing Script", cursive;
+  
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+  }
 @layer base {
     :root {
       --background: 320 30% 98%;
